@@ -7,11 +7,11 @@
   <div class="container">
     <div class="content-box">
       <div class="question-box">
-        <p class="question">Something?</p>
+        <p class="question">{{ selectedQuestion.question }}</p>
       </div>
       <div class="answer-options">
         <mat-grid-list class="grid-list" cols="1" rowHeight="72px">
-          <mat-grid-tile class="grid-tile" *ngFor="let answer of answerList">
+          <mat-grid-tile class="grid-tile" *ngFor="let answer of selectedQuestion.answers">
             <a class="answer" mat-button> <p>{{ answer }}</p></a>
           </mat-grid-tile>
         </mat-grid-list>
