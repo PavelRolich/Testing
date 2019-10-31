@@ -1,0 +1,25 @@
+<mat-card class="header-card">
+  <div class="header-box">
+    <p class="header" mat-header>Quiz interface</p>
+  </div>
+</mat-card>
+<mat-card class="card"> 
+  <div class="container">
+    <div class="content-box">
+      <div class="question-box">
+        <p class="question">Something?</p>
+      </div>
+      <div class="answer-options">
+        <mat-grid-list class="grid-list" cols="1" rowHeight="72px">
+          <mat-grid-tile class="grid-tile" *ngFor="let answer of answerList">
+            <p class="answer"> {{ answer }} </p>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+    <div class="send-box">
+      <button class="send-button" mat-button>Send <span>></span></button>
+    </div>
+  </div>
+</mat-card>
+
