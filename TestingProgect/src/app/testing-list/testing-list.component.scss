@@ -11,6 +11,8 @@
 %text-style-in-box {
   margin: auto;
   color: #ffffff;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+  font-size: 20px;
 }
 
 .header-card {
@@ -27,8 +29,8 @@
   .header-box {
     @extend %block-style;
     height: 100%;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
     .header {
       @extend %text-style-in-box;
@@ -59,8 +61,8 @@
 
       .question-box {
         @extend %block-style;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         height: 20%;
 
         .question {
@@ -76,6 +78,9 @@
           .grid-tile {
             
             .answer {
+              font-family: Roboto,"Helvetica Neue",sans-serif;
+              font-size: 14px;
+              font-weight: normal;
               height: 50px;
               width: 400px;
               color: #ffffff;

@@ -12,7 +12,7 @@
       <div class="answer-options">
         <mat-grid-list class="grid-list" cols="1" rowHeight="72px">
           <mat-grid-tile class="grid-tile" *ngFor="let answer of answerList">
-            <p class="answer"> {{ answer }} </p>
+            <a class="answer" mat-button> <p>{{ answer }}</p></a>
           </mat-grid-tile>
         </mat-grid-list>
       </div>
